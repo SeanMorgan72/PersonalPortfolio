@@ -1,0 +1,403 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none  mx-0 px-0"><img src="static/images/logo-white.png" alt="" class="img-fluid"></span>
+        <span class="d-none d-lg-block">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="static/images/Sean headshot web.jpg" alt="my headshot">
+        </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#awards">Certifications and Degrees</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid p-0">
+
+    <!--====================================================
+                        ABOUT
+    ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+            <h1 class="mb-0">
+                <span class="text-primary">Sean Morgan</span>
+            </h1>
+            <div class="subheading">
+                Software Developer
+            </div>
+            <p class="mb-5" style="max-width: 500px;">A Software Developer, transitioning 13+ years in the retail/customer service industry into software development industry, who enjoys the design, develolpment, and completion of a project. </p>
+            <ul class="list-inline list-social-icons mb-0">
+                <li class="list-inline-item">
+                    <a href="#">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="static/images/Sean headshot web.jpg" alt="big headshot" width="600" height="800" />
+        </div>
+    </section>
+
+    <!--====================================================
+                        EXPERIENCE
+    ======================================================-->
+    <section class="resume-section p-3 p-lg-5 " id="experience">
+        <div class="row my-auto">
+            <div class="col-12">
+                <h2 class="text-center">Experience</h2>
+                <div class="mb-5 heading-border"></div>
+                <div class="resume-item col-md-6 col-sm-12 ">
+                    <div class="card mx-0 p-4 mb-5" style="border-color: #008000; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                        <div class=" resume-content mr-auto">
+                            <h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i> Full Stack Software Engineer Student</h4>
+                            <p>At True Coders, developed skills in a virtual team environment through (Zoom) using the following technologies: C#, .Net Framework, MySQL, CSS3, HTML5, Javascript, and ASP.NET MVC.</p>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary">August 2021 - October 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+                        PORTFOLIO
+    ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio">
+        <div class="row my-auto">
+            <div class="col-12">
+                <h2 class="text-center">Portfolio</h2>
+                <div class="mb-5 heading-border"></div>
+                <div class="col-md-12">
+                    <div class="port-head-cont">
+                        <button class="btn btn-general btn-green filter-b" data-filter="all">All</button>
+                        <button class="btn btn-general btn-green filter-b" data-filter="application">Web Apps</button>
+                        <button class="btn btn-general btn-green filter-b" data-filter="console">Console Apps</button>
+                    </div>
+                </div>
+                <div class="row my-auto">
+                    <div class="col-sm-4 portfolio-item filter application">
+                        <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+                            <div class="caption-port">
+                                <div class="caption-port-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="static/images/portfolio/SeanPortfolio.png" alt="">
+                            <h4>Personal Portfolio Website</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+                        SKILLS
+    ======================================================-->
+    <section class=" d-flex flex-column" id="skills">
+        <div class="p-lg-5 p-3 skill-cover">
+            <h3 class="text-center text-white">Coding Skills</h3>
+            <div class="row text-center my-auto ">
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item">
+                        <i class="fa fa-html5 fa-5x"></i>
+                        <h2><span class="counter"> 87 </span><span>%</span></h2>
+                        <p>HTML5</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item">
+                        <i class="fa fa-css3 fa-5x"></i>
+                        <h2><span class="counter"> 85 </span><span>%</span></h2>
+                        <p>CSS3</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item">
+                        <i class="fa-5x">C#</i>
+                        <h2><span class="counter"> 90 </span><span>%</span></h2>
+                        <p>C Sharp</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item">
+                        <i class='fa-brands fa-js fa-5x'></i>
+                        <h2><span class="counter"> 75 </span><span>%</span></h2>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item">
+                        <i class='fa-brands fa-python fa-5x'></i>
+                        <h2><span class="counter"> 80 </span><span>%</span></h2>
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item">
+                        <i class="fa-5x">C++</i>
+                        <h2><span class="counter"> 85 </span><span>%</span></h2>
+                        <p>C Plus-Plus</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-item">
+                        <i class="fa fa-database fa-5x"></i>
+                        <h2><span class="counter"> 87 </span><span>%</span></h2>
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+                           AWARDS
+    ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="row my-auto">
+            <div class="col-12">
+                <h2 class="text-center">Certifications and Education</h2>
+                <div class="mb-5 heading-border-light"></div>
+                <div class="main-award" id="award-box">
+                    <div class="award">
+                        <div class="award-icon"></div>
+                        <div class="award-content">
+                            <span class="date">June 2001</span>
+                            <h5 class="title">CompTIA A+ Certification</h5>
+                            <p class="description">
+                                Certified to repair computer hardware and software issues.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="award">
+                        <div class="award-icon"></div>
+                        <div class="award-content">
+                            <span class="date">July 2001</span>
+                            <h5 class="title">CompTIA Network+ Certification</h5>
+                            <p class="description">
+                                Certified to design, install, and repair all networks except Cisco networks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="award">
+                        <div class="award-icon"></div>
+                        <div class="award-content">
+                            <span class="date">July 2011</span>
+                            <h5 class="title">A.A.S. in Industrial Electronics</h5>
+                            <p class="description">
+                                J.F. Drake State Technical College <br>
+                                First Mechatronics program developed, introduced to embedded programming.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="award">
+                        <div class="award-icon"></div>
+                        <div class="award-content">
+                            <span class="date">October 2021</span>
+                            <h5 class="title">Full Stack Software Engineer Certification</h5>
+                            <p class="description">
+                                True Coders <br>
+                                C#, .Net Framework, HTML5, CSS3, Javascript, MySQL, ASP.NET MVC
+                            </p>
+                        </div>
+                    </div>
+                    <div class="award">
+                        <div class="award-icon"></div>
+                        <div class="award-content">
+                            <span class="date">May 2019 - May 2022</span>
+                            <h5 class="title">A.A.S. in Computer Information Systems - Programming</h5>
+                            <p class="description">
+                                Calhoun Community College <br>
+                                Python, Linux, C++, Java, Oracle SQL
+                            </p>
+                        </div>
+                    </div>
+                    <div class="award">
+                        <div class="award-icon"></div>
+                        <div class="award-content">
+                            <span class="date">June 2022 - December 2025</span>
+                            <h5 class="title">Bachelors of Science in Computer Science: Systems and Software Engineering</h5>
+                            <p class="description">
+                                Athens State College <br>
+                                Computer Science (CS) Courses: <br>
+                                    Computer Science 1,2 (C++); Digital Logic Design; Ethical Computing; Data Structures; <br>
+                                    Assembly Language; Programming Laguages (Python, C++, Java, OCaml, Smalltalk, Haskel); <br>
+                                    Algorithm Analysis; Object Oriented Programming (SOLID Principles) <br>
+                                Information Technology (ITE) Courses: <br> 
+                                    Networking Fundamentals (TCP/IP); Local Area Networks; Database Systems (SQL); Information Security <br>
+                                Math Courses: <br> 
+                                    Discrete Mathematics; Matrices and Linear Algebra; Abstract Algebra; Differential Equations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================================================
+                          CONTACT
+    ======================================================-->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column">
+        <div class="row my-auto" id="contact">
+            <div class="col-md-8">
+                <div class="contact-form">
+                    <h3>CONTACT FORM</h3>
+                    <div class="heading-border-light"></div>
+                    <div class="row con-form">
+                        <div class="col-md-12">
+                            <input type="text" name="full-name" placeholder="Full Name" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" name="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" name="subject" placeholder="Subject" class="form-control">
+                        </div>
+                        <div class="col-md-12"><textarea name="" id=""></textarea></div>
+                        <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button">Send</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="contact-info">
+                    <h3>CONTACT INFO</h3>
+                    <div class="heading-border-light"></div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-add contact-side-desc contact-box-desc">
+                                <h3><i class="fa fa-map-marker cl-atlantis fa-1x"></i></h3>
+                                <p class="description">
+                                    136 Cresent Circle <br>
+                                    Madison, Alabama 35758 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-phone contact-side-desc contact-box-desc">
+                                <h3><i class="fa fa-phone cl-atlantis fa-1x"></i></h3>
+                                <p class="description">(256) 617 - 8301</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-mail contact-side-desc contact-box-desc">
+                                <h3><i class="fa fa-envelope cl-atlantis fa-1x"></i></h3>
+                                <address class="address-details-f">
+                                    Email: <a href="mailto:sean.morgan0323@gmail.com" class="">sean.morgan0323@gmail.com</a>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!--====================================================
+                    PORTFOLIO MODALS
+======================================================-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <div class="title-bar">
+                            <div class="col-md-12">
+                                <h2 class="text-center">Personal Portfolio Website</h2>
+                                <div class="heading-border"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="static/images/portfolio/SeanPortfolio.png" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    The personal portfolio website project uses Python in a Django framework with Bootstrap for functionality. <br>
+                                    The purpose of this project is for potential employers to get a glimpse of who Sean Morgan is and view the <br>
+                                    gallery of coding projects.
+                                </p>
+                                <ul class="list-inline item-details">
+                                    <li>
+                                        Source Code:
+                                        <strong>
+                                            <a href="https://github.com/SeanMorgan72/PointOfSale">https://github.com/SeanMorgan72/PointOfSale</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        Date:
+                                        <strong>
+                                            <a href="#">December 2024</a>
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        Service:
+                                        <strong>
+                                            <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
