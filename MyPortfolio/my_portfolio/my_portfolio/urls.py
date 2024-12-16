@@ -18,10 +18,10 @@ from django.contrib import admin
 from django.urls import path, re_path
 from portfolio import views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='home'),  # Home/Index without parameters
+    path('', views.index, name='home'),
     path('<str:controller>/<str:action>/', views.dispatch, name='dispatch'),
     re_path(r'^(?P<controller>\w+)/(?P<action>\w+)/(?P<id>\d+)?/?$', views.dispatch, name='dispatch_with_id'),
+    path('contact/', views.send_contact_email, name='send_contact_email'), 
 ]

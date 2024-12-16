@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, Http404
+from django.core.mail import send_mail
 import logging
 
 # Configure logger
@@ -77,3 +78,40 @@ def dispatch(request, controller, action, id=None):
     except Exception as e:
         logger.exception("An error occurred while dispatching")
         raise Http404("Route not found")
+
+def send_contact_email(request):
+    """
+    View function to send contact email.
+
+    Args:
+        request (Request): the Django request object
+
+    Returns:
+        HttpResponse: the response to the request, either a success message or an error message
+
+    Notes:
+        This function expects a POST request and extracts the following parameters from the request:
+            - name
+            - email
+            - message
+        It then sends an email using the send_mail function and returns a success response.
+    """
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+
+        # Send the email
+        send_mail(
+            'Contact Form Submission',
+            f'Name: {name}\nEmail: {email}\nMessage: {message}',
+            'sean.morgan0323@gmail.com',  # Replace with your email address
+            ['sean.morgan0323@gmail.com'],  # Replace with the recipient's email address
+            fail_silently=False,
+        )
+
+        # Return a success response
+        return HttpResponse('Email sent successfully!')
+    else:
+        return HttpResponse('Invalid request method.')
+
