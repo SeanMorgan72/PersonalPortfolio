@@ -25,4 +25,30 @@
     target: '#sideNav'
   });
 
+  // Get the form fields
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  
+  // Add an event listener to the form submission
+  document.getElementById('contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+  
+    // Send the email using the Django view
+    fetch('/contact/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    })
+    .then((response) => response.text())
+    .then((message) => console.log(message))
+    .catch((error) => console.error(error));
+  });
+
 })(jQuery); // End of use strict
