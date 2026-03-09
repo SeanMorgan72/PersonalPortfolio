@@ -89,13 +89,15 @@ cd personal-portfolio
 pip install -r requirements.txt
 python manage.py runserver
 http://127.0.0.1:8000
-
+---
+---
 ## 🎓 About the Developer
 
 **Sean Morgan**
 
 I am currently completing a **Bachelor's degree in Computer Science** with a focus on **systems and software engineering**. My goal is to transition into a **software engineering career**, applying my experience in programming, system design, and web development.
-
+---
 ## 📅 Project Date
 
 December 14, 2024
+---
