@@ -1,52 +1,101 @@
 # 📚 Personal Portfolio
 
-Welcome to **Personal Portfolio** — a personal project designed to showcase my skills, experience, and projects. Built using the Django framework, this web application serves as an interactive and customizable space for visitors to explore my professional work.
+Welcome to **Personal Portfolio** — a web application designed to showcase my software development projects, technical skills, and professional background. This site serves as a central hub where visitors can explore the work I have completed during my Computer Science studies.
 
-## 🚀 Features
+The application is built using the **Django framework** and demonstrates full-stack web development concepts including backend logic, database management, and responsive frontend design.
 
-- **Showcase Projects**: Highlight past and ongoing projects with descriptions, images, and links.
-- **About Me Section**: Share a biography and professional background.
-- **Contact Form**: Allow visitors to reach out directly through the website.
-- **Responsive Design**: Mobile-friendly layout to ensure accessibility on any device.
+---
 
-## 🛠️ Technologies Used
+# 🚀 Features
 
-- **Backend**: Django 5.1.3 (Python-based web framework)
-- **Frontend**: HTML, CSS, and JavaScript for an interactive user experience
-- **Database**: SQLite (can be upgraded to PostgreSQL, MySQL, etc.)
-- **Version Control**: Git and GitHub for project management and version tracking
-- **Bootstrap**: Version 4.3.1 for responsive and modern design components
+### Project Showcase
+Displays past and ongoing projects with descriptions and supporting details.
 
-## 📂 Project Structure
+### About Me Section
+Provides background information about my education and professional goals.
 
+### Contact Form
+Allows visitors to send messages directly through the website.
+
+### Responsive Design
+Mobile-friendly layout built with Bootstrap for accessibility across devices.
+
+---
+
+# 🛠️ Technologies Used
+
+## Backend
+- Django 5.1.3
+- Python
+
+## Frontend
+- HTML
+- CSS
+- JavaScript
+- Bootstrap 4.3.1
+
+## Database
+- SQLite (default Django database)
+
+## Version Control
+- Git
+- GitHub
+
+---
+
+# 📂 Project Structure
+```
 my_portfolio/
-├── db.sqlite3         # Database file
-├── manage.py          # Django project management script
-├── requirements.txt   # List of Python dependencies
-├── my_portfolio/      # Main Django project folder
-│   ├── asgi.py       
-│   ├── settings.py    # Project settings and configurations
-│   ├── urls.py        # URL definitions and routing
-│   ├── wsgi.py        
-│   └── __init__.py   
+├── db.sqlite3
+├── manage.py
+├── requirements.txt
+├── my_portfolio/
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── __init__.py
+│
 ├── portfolio/
-|   ├── migrations/
-|   ├── static/
-|   |   ├── css/
-|   |   ├── images/
-|   |   ├── js/
-|   |   └── library/
-|   ├── templates/
-|   |   ├── home/
-|   |   ├── shared/
-|   |   └── base.html
-|   ├── admin.py
-|   ├── apps,py
-|   ├── models.py
-|   ├── tests.py
-|   ├── views.py
-|   └── __init__.py
+│   ├── migrations/
+│   ├── static/
+│   │   ├── css/
+│   │   ├── images/
+│   │   ├── js/
+│   │   └── library/
+│   │
+│   ├── templates/
+│   │   ├── home/
+│   │   ├── shared/
+│   │   └── base.html
+│   │
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── views.py
+│   └── __init__.py
+```
 
-Author: Sean Morgan
-This project is proudly developed and maintained by me.
-Date: 12/14/2024
+---
+
+# ⚙️ Installation and Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/personal-portfolio.git
+cd personal-portfolio
+pip install -r requirements.txt
+python manage.py runserver
+http://127.0.0.1:8000
+
+## 🎓 About the Developer
+
+**Sean Morgan**
+
+I am currently completing a **Bachelor's degree in Computer Science** with a focus on **systems and software engineering**. My goal is to transition into a **software engineering career**, applying my experience in programming, system design, and web development.
+
+## 📅 Project Date
+
+December 14, 2024
