@@ -105,6 +105,14 @@ I am currently completing a **Bachelor's degree in Computer Science** with a foc
 
 ---
 
+# 🚧 Upcoming Updates
+
+This portfolio will continue to evolve as I complete additional coursework and development projects.
+
+I am currently working with two other developers on an **Academic Planning Web Application** for my **Senior Software Engineering Capstone course**. Once the project is completed and approved for public release, additional details and related work may be added to this portfolio.
+
+---
+
 # 📌 Project Details
 
 **Author:** Sean Morgan  
