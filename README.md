@@ -77,12 +77,12 @@ my_portfolio/
 │   └── __init__.py
 ```
 
----
+
 
 # ⚙️ Installation and Setup
 
 Clone the repository:
-
+---
 ```bash
 git clone https://github.com/yourusername/personal-portfolio.git
 cd personal-portfolio
