@@ -34,9 +34,6 @@ Mobile-friendly layout built with Bootstrap for accessibility across devices.
 - JavaScript
 - Bootstrap 4.3.1
 
-## Database
-- SQLite (default Django database)
-
 ## Version Control
 - Git
 - GitHub
